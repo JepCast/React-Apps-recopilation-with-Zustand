@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# ✅ Todo List – Mini App
+A simple and clean to-do list app built with React, TypeScript, Zustand, and Tailwind CSS. It supports adding, checking off, and deleting tasks, while persisting the list in localStorage thanks to Zustand’s persist middleware.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🖼 UI Preview
+![To-Do List](image.png)
 
-Currently, two official plugins are available:
+## ✨ Features
+✅ Add new to-dos with a button or by pressing Enter
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Toggle task completion using a checkbox
 
-## Expanding the ESLint configuration
+✅ Delete tasks individually
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Visual feedback for completed tasks (line-through)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Tasks are persisted in localStorage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Fully responsive and accessible UI with Tailwind CSS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✅ Global state management via Zustand
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📦 Tech Stack
+React – Frontend library
+
+TypeScript – Type safety and clarity
+
+Zustand – Global state manager (with persistence)
+
+Tailwind CSS – Utility-first responsive design
+
+localStorage – Client-side data persistence
+
+
