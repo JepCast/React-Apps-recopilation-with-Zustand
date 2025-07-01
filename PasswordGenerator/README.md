@@ -22,7 +22,7 @@ A customizable and secure password generator built using React, TypeScript, Zust
 
 ✅ Styled with responsive Tailwind CSS
 
-##🧠 How It Works
+## 🧠 How It Works
 The app uses a Zustand store (usePasswordStore) to manage:
 
 | Property            | Description                      |
@@ -34,7 +34,7 @@ The app uses a Zustand store (usePasswordStore) to manage:
 | `includeLowercase`  | Include lowercase letters        |
 | `generatedPassword` | Resulting password               |
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 React – UI rendering
 
 TypeScript – Type-safe development
