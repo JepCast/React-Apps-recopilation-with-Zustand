@@ -1,11 +1,10 @@
-💸 Expense Tracker – Mini App
+# 💸 Expense Tracker – Mini App
 A simple and clean expense tracking app built with React, TypeScript, Zustand, and Tailwind CSS. This tool helps users manage and track their personal expenses by allowing them to add and remove expenses with real-time total calculation. Data is stored in the browser using localStorage.
 
-🔹 This is one of several mini projects included in a learning-focused repository.
-
+## 🖼 UI Preview
 ![Expense Tracker Screenshot](image.png)
 
-📦 Features
+## 📦 Features
 ✅ Add new expenses with a description and amount
 
 ✅ View a list of all recorded expenses
@@ -18,7 +17,7 @@ A simple and clean expense tracking app built with React, TypeScript, Zustand, a
 
 ✅ Global state with Zustand and persisted using localStorage
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 React – UI library
 
 TypeScript – For type safety

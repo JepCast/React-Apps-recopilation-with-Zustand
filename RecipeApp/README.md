@@ -1,8 +1,7 @@
-🧾 Recipe Book – Mini App
+# 🧾 Recipe Book – Mini App
 This is a simple recipe management app built with React, TypeScript, Zustand, and Tailwind CSS. It allows users to create, edit, and delete their favorite recipes. All data is saved in the browser using localStorage, so the recipes persist between sessions.
 
-⚠️ This mini app is part of a larger repository containing several small projects created for learning and experimentation purposes.
-
+## 🖼 UI Preview
 ![Recipe Book Screenshot](image.png)
 
 🧠 Features
