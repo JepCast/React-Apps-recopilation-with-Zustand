@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+🧾 Recipe Book – Mini App
+This is a simple recipe management app built with React, TypeScript, Zustand, and Tailwind CSS. It allows users to create, edit, and delete their favorite recipes. All data is saved in the browser using localStorage, so the recipes persist between sessions.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ This mini app is part of a larger repository containing several small projects created for learning and experimentation purposes.
 
-Currently, two official plugins are available:
+![Recipe Book Screenshot](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Features
+✅ Add recipes with a name, ingredients, and instructions
 
-## Expanding the ESLint configuration
+✅ Edit existing recipes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Delete recipes from your list
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ All data is stored in localStorage
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Clean and responsive UI using Tailwind CSS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✅ State management with Zustand
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+✅ Type safety using TypeScript
+
+🛠️ Tech Stack
+React – UI library
+
+TypeScript – Strong typing support
+
+Zustand – Simple state management
+
+Tailwind CSS – Utility-first styling
+
+localStorage – Client-side persistence
+
+📝 Notes
+Ingredients are entered as a comma-separated list.
+
+Editing a recipe removes the original and replaces it with the updated one.
+
+Error validation ensures all fields are filled before submitting.

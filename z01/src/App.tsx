@@ -1,4 +1,4 @@
-import { useCounter } from "./Store"
+import { useCounter } from "./useStore"
 function App() {
   // const count = useCounter(state => state.count)
   // const increment = useCounter(state => state.increment)

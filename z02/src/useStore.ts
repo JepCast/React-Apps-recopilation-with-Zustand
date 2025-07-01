@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 type Recipe = {
     id: number;
@@ -13,13 +14,18 @@ type RecipeStore = {
     removeRecipe: (id: number) => void;
 }
 
-export const useStore = create<RecipeStore>((set) => ({
-    recipes: [],
-    addRecipe: (recipe) => set((state) => ({ recipes: [...state.recipes, recipe] })),
-    //Filtra nuestras recetas por id, haciendo que la receta que seleccionemos que queremos eliminar sea eliminada
-    //Retornando todas las recetas que no sean iguales al id que tiene la receta que queremos eliminar.
-    removeRecipe: (id) => set((state) => ({
-        recipes: state.recipes.filter(
-            (recipe) => recipe.id !== id)
-    }))
-}))
+export const useRecipeStore = create<RecipeStore>()(
+    persist<RecipeStore>(
+        (set) => ({
+            recipes: [],
+            addRecipe: (recipe) => set((state) => ({ recipes: [...state.recipes, recipe] })),
+            removeRecipe: (id) => set((state) => ({
+                recipes: state.recipes.filter((recipe) => recipe.id !== id)
+            }))
+        }),
+        {
+            name: 'recipes-storage',
+            storage: createJSONStorage(() => localStorage)
+        }
+    )
+)

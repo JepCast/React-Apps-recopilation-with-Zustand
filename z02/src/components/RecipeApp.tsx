@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useStore } from "../useStore";
+import { useRecipeStore } from "../useStore";
 
 type Recipe = {
     id: number;
@@ -9,7 +9,7 @@ type Recipe = {
 }
 
 function RecipeApp() {
-    const { recipes, addRecipe, removeRecipe } = useStore();
+    const { recipes, addRecipe, removeRecipe } = useRecipeStore();
 
     const [name, setName] = useState<string>('');
     const [ingredients, setIngredients] = useState<string>('');
