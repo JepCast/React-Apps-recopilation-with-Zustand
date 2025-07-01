@@ -20,6 +20,9 @@ This is a simple recipe management app built with React, TypeScript, Zustand, an
 
 ✅ Type safety using TypeScript
 
+✅ Global state with Zustand and persisted using localStorage
+
+
 🛠️ Tech Stack
 React – UI library
 
@@ -29,7 +32,6 @@ Zustand – Simple state management
 
 Tailwind CSS – Utility-first styling
 
-localStorage – Client-side persistence
 
 📝 Notes
 Ingredients are entered as a comma-separated list.

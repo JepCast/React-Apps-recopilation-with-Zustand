@@ -34,21 +34,3 @@ export const useStore = create<ExpenseStore>()(
         }
     )
 )
-
-
-// export const useStore = create<ExpenseStore>((set) => ({
-//     persist((set) => ({
-//         expenses: [],
-//         addExpense: (expense) => set((state) => ({
-//             expenses: [...state.expenses, expense]
-//         })),
-//         removeExpense: (id) => set((state) => ({
-//             expenses: state.expenses.filter((expense) => expense.id !== id)
-//         }))
-//     })),
-// (
-//     name: 'expense-storage',
-//     getStorage: () => localeStorage
-// )
-    
-// }))
