@@ -1,7 +1,7 @@
-🔐 Password Generator – Mini App
+# 🔐 Password Generator – Mini App
 A customizable and secure password generator built using React, TypeScript, Zustand, and Tailwind CSS. Users can create strong passwords by selecting character types and setting the desired length. The app’s logic is fully handled by Zustand’s global store, making it clean, reactive, and easy to scale.
 
-✨ Features
+## ✨ Features
 ✅ Generate strong, random passwords
 
 ✅ Toggle:
@@ -22,7 +22,7 @@ A customizable and secure password generator built using React, TypeScript, Zust
 
 ✅ Styled with responsive Tailwind CSS
 
-🧠 How It Works
+##🧠 How It Works
 The app uses a Zustand store (usePasswordStore) to manage:
 
 | Property            | Description                      |
