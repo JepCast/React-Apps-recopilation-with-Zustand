@@ -1,5 +1,5 @@
 ⚛️ Mini React Apps Collection
-A personal collection of 10 mini apps built using React, TypeScript, Zustand, and Tailwind CSS. These projects were created for learning and experimentation purposes, covering concepts like localStorage, global state management, API fetching, dynamic forms, and responsive UI.
+A personal collection of 8 mini apps built using React, TypeScript, Zustand, and Tailwind CSS. These projects were created for learning and experimentation purposes, covering concepts like localStorage, global state management, API fetching, dynamic forms, and responsive UI.
 
 📚 What's Included?
 | #   | App Name              | Description                                                                      |
