@@ -19,7 +19,6 @@ interface QuizState {
     resetQuiz: () => void;
 }
 
-
 export const useQuizStore = create<QuizState>()(
     persist((set) => ({
         currentQuestion: 0,

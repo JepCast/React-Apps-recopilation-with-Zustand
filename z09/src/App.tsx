@@ -1,6 +1,10 @@
+import QuizLayout from "./components/QuizLayout"
+
 function App() {
   return (
-    <div className="text-3xl font-bold underline"></div>
+    <div>
+      <QuizLayout/>
+    </div>
   )
 }
 
