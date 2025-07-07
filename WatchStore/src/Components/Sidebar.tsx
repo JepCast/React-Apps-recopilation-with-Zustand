@@ -7,10 +7,10 @@ import { data } from "../db/data";
 interface FilterState {
     selectedCountries: string[];
     selectedColors: string[];
-    selectedPriceRange: { min: string; max: string } | null;
+    selectedPriceRange: { min: number; max: number } | null;
     setSelectedCountries: (countries: string[]) => void;
     setSelectedColors: (colors: string[]) => void;
-    setSelectedPriceRange: (range: { min: string; max: string } | null) => void;
+    setSelectedPriceRange: (range: { min: number; max: number } | null) => void;
     clearFilters: () => void;
 }
 interface Product {

@@ -1,1 +1,0 @@
-Simple React counter using create Zustand Store.
